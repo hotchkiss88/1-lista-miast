@@ -4,23 +4,23 @@ let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokio', 'Mosco
 function townNames(x) {
 
 
-    let scriptElement= document.getElementsByTagName('script');
+  let scriptElement = document.getElementsByTagName('script');
 
-    let ulElement = document.createElement("ul");
+  let ulElement = document.createElement("ul");
 
-    x.forEach((city) => {
-            let li = document.createElement('li');
+  x.forEach((city) => {
+    let li = document.createElement('li');
 
-            li.innerText = city;
+    li.innerText = city;
 
-            ulElement.appendChild(li);
+    ulElement.appendChild(li);
 
-            li.className += 'city';
-        }
+    li.className += 'city';
+  }
 
-    )
+  )
 
-    document.body.insertAdjacentElement('afterbegin', ulElement);
+  document.body.insertAdjacentElement('afterbegin', ulElement);
 
 };
 
