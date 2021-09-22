@@ -6,21 +6,21 @@ function townNames(x) {
 
   let scriptElement = document.getElementsByTagName('script');
 
-  let ulElement = document.createElement("ul");
+  let olElement = document.createElement("ol");
 
   x.forEach((city) => {
     let li = document.createElement('li');
 
     li.innerText = city;
 
-    ulElement.appendChild(li);
+    olElement.appendChild(li);
 
     li.className += 'city';
   }
 
   )
 
-  document.body.insertAdjacentElement('afterbegin', ulElement);
+  document.body.insertAdjacentElement('afterbegin', olElement);
 
 };
 
